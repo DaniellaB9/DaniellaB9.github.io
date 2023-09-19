@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 14px;
+}
+/*Formato de todos los elementos de la cabecera*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px 30px 100px;
+}
+.navegador-header ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: #242E52;
+}
+li a:hover{
+    color: hsl(227, 39%, 23%,60%);
+}
+button{
+    width: 120px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #8B48BF;
+    border: none;
+}
+button:hover{
+    background-color: #bfa748;
+}
+button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.rayitas{
+    display: none;
+}
+/*Formato de todos los elementos de la seccion principal*/
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.div-main{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: right;
+    width: 400px;
+    height: 300px;
+}
+h1{
+    font-size: 40px;
+}
+/*Formato de todos los elementos del artic central*/
+.div2-central{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    padding: 10px;
+    padding-left: 80px;
+}
+h2{
+    font-size: 25px;
+    width: 350px;
+}
+.p-web{
+    width: 27%;
+}
+.p-mobile{
+    display: none;
+}
+/*Formato de todos los elementos de la seccion central*/
+
+.section-central{
+    display: flex;
+    background-color: #FAFAFA;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 250px;
+    padding: 10px 300px 10px 300px;
+
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 12px;
+}
+
+article p{
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 15px;
+    
+}
+.div-article-central{
+    display: flex;
+    line-height: 0.5rem;
+    align-items: center;
+}
+.numero{
+    padding: 5px 10px 15px 10px;
+    background-color: #8B48BF;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 15px;
+    width: 30px;
+    color: #FFFFFF;
+}
+/*Formato de todos los elementos de la seccion posterior*/
+.section-posterior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0% 10% 0%;
+}
+.section-posterior div{
+    padding-top: 5%;
+}
+.section-posterior h2{
+    padding-bottom: 3%;
+    text-align: center;
+}
+.sect1-sect-posterior{
+    display: flex;
+    padding-bottom: 15px;
+    background-color: #FAFAFA;
+    
+}
+.article-sect1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 0px;
+}
+.article-sect1 p{
+    
+    width: 350px;  
+    padding-top: 20px; 
+}
+.div-article-sect1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tenisImg{
+    padding: 10px;
+    
+}
+/*Formato de todos los elementos de la seccion anterior al footer*/
+.div-prefooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    padding: 0px 100px 0px 100px;
+    height: 120px; 
+}
+.div-prefooter h2{
+    width: 20%;
+    font-weight: 400;
+}
+.button-white{
+    background-color:#FFFFFF;;
+}
+.button-white a{
+    color: #8B48BF;
+}
+.button-white a:hover{
+    color:#FFFFFF;
+}
+
+/*Formato de todos los elementos del footer*/
+footer{
+    background-color: #1E1E26;
+    color: #FFFFFF;
+    padding: 20px 100px 20px 100px;
+    font-size: 12px;
+}
+.divspan-footer{
+    text-align: right;
+}
+.divprincip-footer{
+    display: flex;
+    justify-content: space-between; 
+}
+.divredes-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+.divredes-footer img{
+    padding-right: 5px;
+}
+.div-navs-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.nav-footer ul{
+    list-style-type: none;
+    line-height: 0.7rem;
+}
+.nav-footer a{
+    color: #FFFFFF;
+}
+.nav-footer a:hover{
+    color: hsla(228, 12%, 83%, 0.863);
+}
+input{
+    height: 30px;
+    width: 250px;
+    border-radius: 20px;
+    padding-left: 5px;
+}
+.boton-chico{
+    width: 50px;
+}
+@media(max-width:480px){
+    header{
+        padding: 50px;
+    }
+    header button{
+        display: none;
+    }
+    .navegador-header{
+        display: none;
+    }
+    .rayitas{
+        display:block;
+    }
+    .tenis{
+        padding-left: 10px;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*parte 3*/
+    .div2-central{
+        flex-direction: column;
+        justify-content: space-between;
+        background-color:#3CDDF3;
+        height: 50%;
+        padding: 20px;
+    }
+    h2{
+        width: 60%;
+        padding-bottom: 15%;
+    }
+    .p-web{
+        display: none;
+    }
+    .p-mobile{
+        display: block;
+        width: 80%;;
+    }
+    /*Parte 4*/
+    .section-central{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 20px;
+        padding-right: 0px;
+        height: 50%;
+    }
+    .div-article-central{
+        background-color: rgba(139, 72, 191,0.3);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    /*Parte 5*/
+    .sect1-sect-posterior article{
+        display: none;
+    }
+    .sect1-sect-posterior article:nth-child(2){
+        display: block;
+    }
+    /*Parte 6*/
+    .div-prefooter{
+        flex-direction: column;
+        background-color:#3CDDF3;
+        justify-content: space-evenly;
+        height: 50%;
+        padding: 20px;
+    }
+    .div-prefooter h2{
+        width: 50%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .button-white{
+        background-color:#232C50;
+    }
+    .button-white a{
+        color: #FFFFFF;
+    }
+    /*Parte 7*/
+    .divspan-footer{
+        text-align: center;
+    }
+    .divprincip-footer{
+        flex-direction: column-reverse;
+    }
+    .divredes-footer{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .divredes-footer div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .div-navs-footer{
+        align-content: center;
+        width: auto;
+        padding-top: 15px;
+    }
+    .buscador{
+        display: flex;
+    }
+}
